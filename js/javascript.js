@@ -1,5 +1,3 @@
-
-
 window.onscroll = function () { scrollFunctionNavbar() };
 
 document.addEventListener("DOMContentLoaded", function () {
