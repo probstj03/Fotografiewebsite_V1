@@ -1,5 +1,9 @@
 window.onscroll = function() {scrollFunction()};
 
+document.addEventListener("DOMContentLoaded", function () {
+  setFavicon();
+});
+
 var darkmode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
 
 function setFavicon() {
