@@ -106,7 +106,7 @@
   }
 
   #header_analog {
-    background-image: url("startpicture_analog.jpg");
+    background-image: url("startpicture_analog_1.jpg");
   }
 
   #header_subpage {
@@ -370,20 +370,8 @@
       box-shadow: 0 0 black;
     }
 
-    #header_portraits {
-      background-image: url("startpicture_portraits.jpg");
-    }
-
-    #header_events {
-      background-image: url("startpicture_events.jpg");
-    }
-
-    #header_astro {
-      background-image: url("startpicture_astro.jpg");
-    }
-
-    #header_start {
-      background-image: url("startpicture.jpg");
+    #header_analog {
+      background-image: url("startpicture_analog.jpg");
     }
 
     .headerpicture {
@@ -669,7 +657,7 @@
   }
 
   #header_analog {
-    background-image: url("startpicture_analog.jpg");
+    background-image: url("startpicture_analog_1.jpg");
   }
 
   #header_subpage {
@@ -900,22 +888,6 @@
       transition: 0, 3s;
       margin: 5px;
       height: 30px;
-    }
-
-    #header_portraits {
-      background-image: url("startpicture_portraits.jpg");
-    }
-
-    #header_events {
-      background-image: url("startpicture_events.jpg");
-    }
-
-    #header_astro {
-      background-image: url("startpicture_astro.jpg");
-    }
-
-    #header_start {
-      background-image: url("startpicture.jpg");
     }
 
     #header_analog {
