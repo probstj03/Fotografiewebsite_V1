@@ -169,7 +169,6 @@
   .subcontainer {
     width: 500px;
     overflow: hidden;
-    margin: 20px;
   }
 
   .subcontainer img {
@@ -411,7 +410,7 @@
     font-style: oblique;
     font-size: 20px;
     margin-top: -10vh;
-    margin-bottom: -10vh;
+    margin-bottom: 10vh;
   }
 
   main {
@@ -432,7 +431,7 @@
     justify-content: center;
     background-color: #151515;
   }
-  
+
   #firstmain {
     border-top-right-radius: 5px;
     border-top-left-radius: 5px;
