@@ -368,7 +368,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 40px;
+    font-size: 50px;
     letter-spacing: 10px;
     color: white;
     text-shadow: 0 0 5px #000000;
@@ -410,7 +410,10 @@
   .subcontainer {
     width: 500px;
     overflow: hidden;
-    margin: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
   }
 
   .subcontainer img {
