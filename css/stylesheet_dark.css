@@ -428,6 +428,10 @@
     height: 200px;
   }
 
+  .galeriecontainer img:hover {
+    filter: brightness(60%);
+  }
+
   .maincontainer p {
     text-align: center;
     font-size: 20px;
