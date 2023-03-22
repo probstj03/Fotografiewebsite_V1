@@ -57,6 +57,10 @@
     display: none;
   }
 
+  #corner {
+    display: none;
+  }
+
   .navlinks {
     flex-flow: row;
     justify-content: flex-end;
@@ -362,6 +366,17 @@
     height: 60vh;
     width: 100%;
     object-fit: cover;
+  }
+  #corner {
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    background-color: #151515;
+    position: fixed;
+    z-index: 0;
+    height: 10px;
+    top: 60vh;
+    margin-top: -5px;
+    width: 100%;
   }
 
   .headline {
