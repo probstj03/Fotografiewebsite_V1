@@ -169,6 +169,7 @@
   .subcontainer {
     width: 500px;
     overflow: hidden;
+    margin: 20px;
   }
 
   .subcontainer img {
