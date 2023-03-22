@@ -380,7 +380,7 @@
   }
 
   .headline {
-    height: 35vh;
+    height: 50vh;
     width: 100%;
     margin-bottom: 0px;
   }
@@ -410,8 +410,8 @@
     padding-bottom: 5px;
     font-style: oblique;
     font-size: 20px;
-    margin-top: 60px;
-    margin-bottom: 60px;
+    margin-top: -10vh;
+    margin-bottom: -10vh;
   }
 
   main {
@@ -431,6 +431,12 @@
     flex-wrap: wrap;
     justify-content: center;
     background-color: #151515;
+  }
+  
+  #firstmain {
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    margin-top: 20vh;
   }
 
   .subcontainer {
