@@ -29,6 +29,7 @@
     font-family: 'aller', sans-serif;
     background-color: #151515;
     color: white;
+    margin: 0;
   }
 
   header li {
@@ -267,6 +268,7 @@
     font-family: 'aller', sans-serif;
     background-color: #151515;
     color: white;
+    margin: 0;
   }
 
   .navanchor {
