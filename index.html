@@ -24,21 +24,21 @@
 <body>
   <header>
     <nav id="navbar" style="margin-right: auto;"><a href="index.html"><img id="headergrafik" class="grafik"
-          src="img/logo.png" alt="logo"></a>
-      <ul class="navlinks" id="navlinks">
-        <li><a href="javascript:void(0)" ontouchstart="closeNav()" onmousedown="closeNav()" id="close">×</a></li><br>
-        <li><a href="index.html" class="navanchor">Home</a></li>
-        <li><a href="events.html" class="navanchor">Events</a></li>
-        <li><a href="portraits.html" class="navanchor">Portraits</a></li>
-        <li><a href="astro.html" class="navanchor">Astro</a></li>
-        <li><a href="analog.html" class="navanchor">Analog</a></li>
-      </ul>
-    </nav>
-    <div class="burger" ontouchstart="openNav()" ontouchstart="mouseOverBurger()" ontouched="mouseOutBurger()" onmousedown="openNav()" onmouseover="mouseOverBurger()" onmouseout="mouseOutBurger()">
-      <div class="line"></div>
-      <div class="line"></div>
-      <div class="line"></div>
-    </div>
+      src="img/logo.png" alt="logo"></a>
+  <ul class="navlinks" id="navlinks">
+    <li><a href="javascript:void(0)" onclick="closeNav()" id="close">×</a></li><br>
+    <li><a href="index.html" class="navanchor">Home</a></li>
+    <li><a href="events.html" class="navanchor">Events</a></li>
+    <li><a href="portraits.html" class="navanchor">Portraits</a></li>
+    <li><a href="astro.html" class="navanchor">Astro</a></li>
+    <li><a href="analog.html" class="navanchor">Analog</a></li>
+  </ul>
+</nav>
+<div class="burger" onclick="openNav()" onmouseover="mouseOverBurger()" onmouseout="mouseOutBurger()">
+  <div class="line"></div>
+  <div class="line"></div>
+  <div class="line"></div>
+</div>
     <div class="headerpicture" id="header_start"></div>
     <div class="headline">
       <h1>Julian Probst</h1>
