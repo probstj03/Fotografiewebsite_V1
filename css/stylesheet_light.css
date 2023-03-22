@@ -465,7 +465,7 @@
     font-style: oblique;
     font-size: 20px;
     margin-top: 60px;
-    margin-bottom: 60px;
+    margin-bottom: -10vh;
   }
 
   main {
@@ -486,6 +486,7 @@
   #firstmain {
     border-top-right-radius: 5px;
     border-top-left-radius: 5px;
+    margin-top: 20vh;
   }
 
   .subcontainer {
