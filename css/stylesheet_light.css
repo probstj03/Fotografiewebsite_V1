@@ -553,6 +553,7 @@
     margin: auto;
     max-width: 1200px;
     text-align: center;
+    z-index: 1;
   }
 
   .footercolumn {
