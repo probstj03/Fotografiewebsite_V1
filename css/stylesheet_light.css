@@ -29,7 +29,8 @@
   body {
     font-family: 'aller', sans-serif;
     margin: 0;
-    overflow-x: hidden;
+    background-color: #ffffff;
+    color: #000000;
   }
 
   header li {
