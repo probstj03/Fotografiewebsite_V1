@@ -38,7 +38,7 @@
   }
 
   .navanchor {
-    color: white;
+    color: #ffffff;
     opacity: 1;
     margin: 35px;
     text-decoration: none;
@@ -47,7 +47,7 @@
   }
 
   .navanchor:hover {
-    color: grey;
+    color: invert(50%);
   }
 
   .burger {
@@ -124,7 +124,7 @@
     transform: translate(-50%, -50%);
     font-size: 50px;
     letter-spacing: 20px;
-    color: white;
+    color: #ffffff;
     text-shadow: 0 0 5px #000000;
   }
 
@@ -180,12 +180,13 @@
   }
 
   .galeriecontainer {
-    padding: 20px;
+    padding: 22px;
     margin: auto;
     text-align: middle;
     display: flex;
     overflow: auto;
-    margin-left: -20px;
+    margin-left: -22px;
+    margin-right: -22px;
   }
 
   .galeriecontainer img {

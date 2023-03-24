@@ -28,9 +28,9 @@
 
   body {
     font-family: 'aller', sans-serif;
-    margin: 0;
     background-color: #ffffff;
     color: #000000;
+    margin: 0;
     overflow-x: hidden;
   }
 
@@ -115,7 +115,6 @@
   .headline {
     height: 100vh;
     width: 100%;
-    margin-bottom: 0px;
   }
 
   .headline h1 {
@@ -166,9 +165,14 @@
     text-align: center;
     position: relative;
   }
+
   #firstmain {
     border-top-right-radius: 5px;
     border-top-left-radius: 5px;
+  }
+
+  main a {
+    color: grey;
   }
 
   .maincontainer {
@@ -198,7 +202,6 @@
     text-align: middle;
     display: flex;
     overflow: auto;
-    transition: 1;
     margin-left: -22px;
     margin-right: -22px;
   }
