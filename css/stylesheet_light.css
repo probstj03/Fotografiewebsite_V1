@@ -202,8 +202,8 @@
     text-align: middle;
     display: flex;
     overflow: auto;
-    margin-left: -22px;
-    margin-right: -22px;
+    padding-left: 0px;
+    padding-right: 0px;
   }
 
   .galeriecontainer img {
