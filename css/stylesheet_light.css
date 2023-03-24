@@ -481,7 +481,7 @@
     padding-top: 5px;
     padding-bottom: 5px;
     font-style: oblique;
-    font-size: 20px;
+    font-size: 17px;
     margin-top: -10vh;
     margin-bottom: 10vh;
   }
@@ -504,6 +504,7 @@
   #firstmain {
     border-top-right-radius: 5px;
     border-top-left-radius: 5px;
+    padding-top: 20px;
   }
 
   .subcontainer {
@@ -529,7 +530,7 @@
   }
 
   .galeriecontainer img {
-    height: 200px;
+    height: 50vw;
   }
 
   .galeriecontainer img:hover {
@@ -537,12 +538,13 @@
   }
 
   .maincontainer p {
-    text-align: center;
-    font-size: 20px;
+    text-align: left;
+    font-size: 17px;
   }
 
   h3 {
     font-size: 30px;
+    line-height: 0px;
   }
 
   footer {
