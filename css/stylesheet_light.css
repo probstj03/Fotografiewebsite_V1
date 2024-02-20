@@ -112,12 +112,15 @@
     object-fit: cover;
   }
 
-  .headline {
+  .top_headline {
     height: 100vh;
     width: 100%;
   }
+  
 
-  .headline h1 {
+
+  .top_headline h1 {
+    
     text-align: center;
     position: relative;
     top: 50%;
@@ -127,6 +130,26 @@
     letter-spacing: 20px;
     color: #ffffff;
     text-shadow: 0 0 5px #000000;
+  }
+
+  .headline h2 {
+    letter-spacing: 10px;
+    font-size: 30px;
+    color: #ffffff;
+    text-shadow: 0 0 5px #000000;
+    z-index: 2;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.2s
+  }
+
+  #links:hover img {
+    filter: brightness(60%);
+  }
+  #links:hover h2 {
+    letter-spacing: 12px;
   }
 
   .headlinesubpage {
@@ -188,13 +211,22 @@
     width: 500px;
     overflow: hidden;
     margin: 20px;
+    position: relative;
+    border-radius: 5px;
   }
 
   .subcontainer img {
-    width: 100%;
     margin-top: 38px;
     border-radius: 5px;
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+    transition: 0.2s ; 
   }
+
+
+
+
 
   .galeriecontainer {
     padding: 22px;
@@ -228,6 +260,7 @@
     text-align: left;
     font-size: 18px;
   }
+
 
   h3 {
     font-size: 30px;
@@ -451,13 +484,15 @@
     margin-top: -5px;
     width: 100%;
   }
-  .headline {
+
+  .top_headline {
     height: 50vh;
     width: 100%;
-    margin-bottom: 0px;
   }
 
-  .headline h1 {
+  .top_headline h1 {
+
+    margin-bottom: 0px;
     text-align: center;
     position: relative;
     top: 50%;
@@ -468,6 +503,26 @@
     color: white;
     text-shadow: 0 0 5px #000000;
   }
+
+  .headline h2 {
+    letter-spacing: 10px;
+    font-size: 30px;
+    color: #ffffff;
+    text-shadow: 0 0 5px #000000;
+    z-index: 2;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.2s
+  }
+  #links:hover img {
+    filter: brightness(60%);
+  }
+  #links:hover h2 {
+    letter-spacing: 12px;
+  }
+
 
   .introcontainer {
     width: 60vw;
@@ -514,11 +569,17 @@
     margin-left: 20px;
     margin-top: 5px;
     margin-bottom: 5px;
+    position: relative;
+    border-radius: 5px;
+  
   }
 
   .subcontainer img {
     width: 100%;
     border-radius: 5px;
+    object-fit: cover;
+    height: auto;
+    transition: 0.2s ; 
   }
 
   .galeriecontainer {
