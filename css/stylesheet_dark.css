@@ -111,12 +111,12 @@
     object-fit: cover;
   }
 
-  .headline {
+  .top_headline {
     height: 100vh;
     width: 100%;
   }
 
-  .headline h1 {
+  .top_headline h1 {
     text-align: center;
     position: relative;
     top: 50%;
@@ -381,13 +381,13 @@
     width: 100%;
   }
 
-  .headline {
+  .top_headline {
     height: 50vh;
     width: 100%;
     margin-bottom: 0px;
   }
 
-  .headline h1 {
+  .top_headline h1 {
     text-align: center;
     position: relative;
     top: 50%;
