@@ -355,7 +355,7 @@
   }
 
   .headerpicture {
-    height: 60vh;
+    height: 80vh;
     width: 100%;
     position: fixed;
     left: 0px;
@@ -365,7 +365,7 @@
 
   .headerpicture img {
     object-fit: fill;
-    height: 60vh;
+    height: 100vh;
     width: 100%;
     object-fit: cover;
   }
@@ -376,13 +376,13 @@
     position: fixed;
     z-index: 0;
     height: 10px;
-    top: 60vh;
+    top: 100vh;
     margin-top: -5px;
     width: 100%;
   }
 
   .top_headline {
-    height: 50vh;
+    height: 60vh;
     width: 100%;
     margin-bottom: 0px;
   }
