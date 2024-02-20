@@ -480,7 +480,7 @@
     position: fixed;
     z-index: 0;
     height: 10px;
-    top: 80vh;
+    top: 100vh;
     margin-top: -5px;
     width: 100%;
   }
