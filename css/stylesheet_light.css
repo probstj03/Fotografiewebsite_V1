@@ -460,7 +460,7 @@
   }
 
   .headerpicture {
-    height: 60vh;
+    height: 80vh;
     width: 100%;
     position: fixed;
     left: 0px;
@@ -469,7 +469,7 @@
   }
 
   .headerpicture img {
-    height: 60vh;
+    height: 80vh;
     width: 100%;
     object-fit: cover;
   }
@@ -480,7 +480,7 @@
     position: fixed;
     z-index: 0;
     height: 10px;
-    top: 60vh;
+    top: 80vh;
     margin-top: -5px;
     width: 100%;
   }
