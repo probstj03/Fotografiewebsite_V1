@@ -558,6 +558,8 @@
 
   #firstmain {
     padding-top: 20px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
   }
 
   .subcontainer {
