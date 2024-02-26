@@ -149,9 +149,7 @@
     filter: brightness(60%);
     transform:scale(1.1)
   }
-  #links:hover h2 {
-    letter-spacing: 12px;
-  }
+
 
   .imagelinks {
     width: 500px;
@@ -200,6 +198,7 @@
   #firstmain {
     border-top-right-radius: 5px;
     border-top-left-radius: 5px;
+    margin-top: 5vh;
   }
 
   main a {
