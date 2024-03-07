@@ -61,4 +61,4 @@ def compress_images(folder_name, data=True):
                 
 
 # Beispielaufruf
-compress_images("planetary")
+compress_images("astro")
