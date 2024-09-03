@@ -164,7 +164,7 @@
     margin-bottom: 0px
   }
 
-  .headlinesubpage h1 {
+  .headlinesubpage p {
     text-align: center;
     position: relative;
     top: 50%;
@@ -313,6 +313,19 @@
 
   footer img {
     width: 25px;
+  }
+
+  #subpage p {
+    text-align: left;
+  }
+
+  #subpage{
+    padding-left: 20vw; 
+    padding-right: 20vw;
+    display: block; 
+    text-align: left;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 
   @media (prefers-color-scheme: dark) {
@@ -655,6 +668,17 @@
 
   footer img {
     width: 25px;
+  }
+
+  #subpage {
+    padding: 20px;
+    display: block;
+    text-align: left;
+  }
+
+  #subpage p {
+    text-align: left;
+    text-decoration: none;
   }
 
   @media (prefers-color-scheme: dark) {
