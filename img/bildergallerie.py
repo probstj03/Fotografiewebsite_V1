@@ -3,16 +3,16 @@ from PIL import Image
 import numpy as np
 import csv
 
-input_dir = "E:/Bilder/Website/"
-#input_dir = "/Volumes/JULIAN_M1/Bilder/Website/"
-output_dir = "C:/Users/probs/OneDrive/Dokumente/Programmieren/Websites/Fotografiewebsite_V1/"
-#output_dir = "/Users/julian/Library/CloudStorage/OneDrive-Persönlich/Dokumente/Programmieren/Websites/Fotografiewebsite_V1/"
+#input_dir = "E:/Bilder/Website/"
+input_dir = "/Volumes/JULIAN_M1/Bilder/Website/"
+#output_dir = "C:/Users/probs/OneDrive/Dokumente/Programmieren/Websites/Fotografiewebsite_V1/"
+output_dir = "/Users/julian/Library/CloudStorage/GoogleDrive-probstj03@gmail.com/Meine Ablage/Dokumente/Programmieren/Websites/Fotografiewebsite_V1/"
 
 def compress_images(folder_name, data=True):
 
   
 
-    files = sorted(os.scandir(input_dir + folder_name), key=lambda f: f.stat().st_mtime, reverse=True)
+    files = sorted(os.scandir(input_dir + folder_name), key=lambda f: f.stat().st_ctime, reverse=True)
     max_index = len(files) 
     index = max_index
     if data:
@@ -40,7 +40,7 @@ def compress_images(folder_name, data=True):
 
                         # Komprimierung für kleine Bilder
                         img_small = img.copy()
-                        img_small.thumbnail((750, 750))
+                        img_small.thumbnail((1000, 1000))
                         img_small.save(output_dir + output_small, quality=40)
                     
                     # HTML Code printen
@@ -51,7 +51,7 @@ def compress_images(folder_name, data=True):
                             f'</a>')
                     else:
                         print(f'<a href="{output_large}" data-lightbox="mygallery" '
-                            f'><img src="{output_small}">'
+                            f'><img loading="lazy" src="{output_small}">'
                             f'</a>')
                     index -= 1 
                         # Verringere die Nummerierung für das nächste Bild
@@ -61,4 +61,4 @@ def compress_images(folder_name, data=True):
                 
 
 # Beispielaufruf
-compress_images("analog")
+compress_images("shooting", False)

@@ -21,7 +21,7 @@
     })
   </script>
   <link rel="stylesheet" type="text/css" href="css/lightbox.min.css">
-  <link rel="stylesheet" type="text/css" href="css/stylesheet_dark.css">
+  <link rel="stylesheet" type="text/css" href="css/stylesheet_light.css">
   <link rel="shortcut icon" type="image/x-icon" href="img/favicon_light.png">
 
   <!-- Google tag (gtag.js) -->
@@ -36,7 +36,7 @@
 
 </head>
 
-<body>
+<body style="background-color: #151515; color: white;">
   <header>
     <nav id="navbar" style="margin-right: auto;"><a href="index.html"><img id="headergrafik" class="grafik"
           src="img/logo.png" alt="logo"></a>
@@ -57,13 +57,12 @@
     <div class="headerpicture">
       <img src="css/startpicture_astro.jpg" alt="startpicture astro">
     </div>
-    <div id="corner"></div>
     <div class="top_headline">
       <h1>Astro</h1>
     </div>
   </header>
   <main>
-    <div class="introcontainer">
+    <div class="introcontainer" style="background-color: #151515; color: white;">
       <p>Die Faszination für das Weltall begleitet mich schon seit meiner Kindheit. Seit meiner Geburt bin ich Mitglied
         im Verein <a href="https://www.sternwarte-ursensollen.de/index.php/de/" target="_blank">Sternfreunde
           Ursensollen e.V.</a>. Kurz nachdem ich
@@ -71,9 +70,9 @@
         professionelles Equipment angeschafft, was die Qualität meiner Aufnahmen enorm verbessert hat. Es fasziniert
         mich besonders, dass ich aus meinem Garten heraus so tiefe Einblicke in das Universum gewinnen kann.</p>
     </div>
-    <div class="maincontainer" id="firstmain">
+    <div class="maincontainer" id="firstmain" style="background-color: #151515; color: white;">
       <h3>Deep Sky</h3>
-      <div class="galeriecontainer">
+      <div class="galeriecontainer" id="astro">
         <a href="img/astro\astro_18.jpg" data-lightbox="mygallery"
           data-title="M106 und NGC 4226 - Skywatcher Newton 200/1000 PDS - 65*180s - ISO800 - Nikon Z6II"><img
             loading="lazy" src="img/astro\astro_small_18.jpg"></a>
@@ -87,8 +86,8 @@
           data-title="M65 & M66 & NGC 3628 - Leo Galaxien Triplett - Skywatcher Newton 200/1000 PDS - 40*180s - ISO800 - Nikon D5200"><img
             loading="lazy" src="img/astro\astro_small_15.jpg"></a>
         <a href="img/astro\astro_14.jpg" data-lightbox="mygallery"
-          data-title="M81 & M82 - Skywatcher Newton 200/1000 PDS - 38x300s - ISO800 - Nikon D750"><img
-            loading="lazy" src="img/astro\astro_small_14.jpg"></a>
+          data-title="M81 & M82 - Skywatcher Newton 200/1000 PDS - 38x300s - ISO800 - Nikon D750"><img loading="lazy"
+            src="img/astro\astro_small_14.jpg"></a>
         <a href="img/astro\astro_13.jpg" data-lightbox="mygallery"
           data-title="NGC 2244 - Rosettennebel - Skywatcher Newton 200/1000 PDS - 27*180s - ISO800 - Nikon D750"><img
             loading="lazy" src="img/astro\astro_small_13.jpg"></a>
@@ -111,14 +110,14 @@
           data-title="M31 - Andromedagalaxie (2021)- Skywatcher Newton 200/1000 PDS - 16x300s - ISO800 - Nikon D750"><img
             loading="lazy" src="img/astro\astro_small_7.jpg"></a>
         <a href="img/astro\astro_6.jpg" data-lightbox="mygallery"
-          data-title="M106 - Skywatcher Newton 200/1000 PDS - 27x300s - ISO800 - Nikon D5200"><img
-            loading="lazy" src="img/astro\astro_small_6.jpg"></a>
+          data-title="M106 - Skywatcher Newton 200/1000 PDS - 27x300s - ISO800 - Nikon D5200"><img loading="lazy"
+            src="img/astro\astro_small_6.jpg"></a>
         <a href="img/astro\astro_5.jpg" data-lightbox="mygallery"
           data-title="M101 - Feuerradgalaxie - Skywatcher Newton 200/1000 PDS - 18x300s - ISO800 - Nikon D5200"><img
             loading="lazy" src="img/astro\astro_small_5.jpg"></a>
         <a href="img/astro\astro_4.jpg" data-lightbox="mygallery"
-          data-title="NGC 891 - Skywatcher Newton 200/1000 PDS - 65*180s - ISO800 - Nikon D5200"><img
-            loading="lazy" src="img/astro\astro_small_4.jpg"></a>
+          data-title="NGC 891 - Skywatcher Newton 200/1000 PDS - 65*180s - ISO800 - Nikon D5200"><img loading="lazy"
+            src="img/astro\astro_small_4.jpg"></a>
         <a href="img/astro\astro_3.jpg" data-lightbox="mygallery"
           data-title="M33 - Dreiecksgalaxie - Skywatcher Newton 200/1000 PDS - 36x300s - ISO800 - Nikon D750"><img
             loading="lazy" src="img/astro\astro_small_3.jpg"></a>
@@ -130,39 +129,49 @@
             loading="lazy" src="img/astro\astro_small_1.jpg"></a>
         </a>
       </div>
-    </div>
-    <div class="maincontainer">
-      <div class="subcontainer">
-        <h3>Ausrüstung</h3>
-        <p>Mein Teleskop ist ein 8 Zoll Newton-Spiegelteleskop von Skywatcher, mit einer Brennweite von 1000mm und
-          einer Blende von f/5. Das macht es relativ lichtstark für seine Größe. Dank des etwas breiteren Fangspiegels
-          eignet es sich besonders gut für die Astrofotografie. Zusätzlich setze ich einen Komakorrektor von Baader ein,
-          um die Sterne am Rand des Bildfelds zu korrigieren. Die Montierung ist eine Skywatcher EQ-6, die ich über
-          einen Laptop steuere. Zum Guiding benutze ich ein Beroflex 300mm Objektiv. Als Software kommt APT (Astro
-          Photography Tool), Stellarium, PHD2 und EQ-MOD zum Einsatz.</p>
-      </div>
-      <div class="subcontainer">
-        <img loading="lazy" src="img/teleskop.jpg" alt="Mein Teleskopsetup">
+      <div class="arrowcontainer" onclick="moveGalery('astro')">
+        <i class="arrow" id="astro_arrow" style="border: solid white; border-width: 0 3px 3px 0;"></i>
       </div>
     </div>
-    <div class="maincontainer">
+    <div class="maincontainer" style="background-color: #151515; color: white;">
       <div class="subcontainer">
-        <h3>Kameras</h3>
-        <p>Für die meisten meiner Bilder nutze ich meine Nikon Z6II Vollformatkamera. Wenn es darum geht, kleinere
-          Objekte wie Galaxien zu fotografieren, greife ich auf meine alte Nikon D5200 APSC-Kamera zurück. Beide Kameras
-          sind nicht für die Astrofotografie modifiziert, was bedeutet, dass ich nur im sichtbaren Licht arbeiten kann
-          und nicht im Infrarotbereich. Trotzdem gibt es viele faszinierende Objekte wie Galaxien, Sternhaufen und
-          Reflexionsnebel, die im sichtbaren Spektrum genügend Licht für spektakuläre Aufnahmen emittieren. Zum Guiden
-          und für Planetenaufnahmen verwende ich eine QHY 5L-II, eine Kamera, die speziell für diese Zwecke entwickelt
-          wurde. Zum Stacken benutze ich APP (Astro Pixel Processor) und Adobe Photoshop.</p>
+        <div>
+          <h3>Ausrüstung</h3>
+          <p>Mein Teleskop ist ein 8 Zoll Newton-Spiegelteleskop von Skywatcher, mit einer Brennweite von 1000mm und
+            einer Blende von f/5. Das macht es relativ lichtstark für seine Größe. Dank des etwas breiteren Fangspiegels
+            eignet es sich besonders gut für die Astrofotografie. Zusätzlich setze ich einen Komakorrektor von Baader
+            ein,
+            um die Sterne am Rand des Bildfelds zu korrigieren. Die Montierung ist eine Skywatcher EQ-6, die ich über
+            einen Laptop steuere. Zum Guiding benutze ich ein Beroflex 300mm Objektiv. Als Software kommt APT (Astro
+            Photography Tool), Stellarium, PHD2 und EQ-MOD zum Einsatz.</p>
+        </div>
+      </div>
+
+        <div class="subcontainer">
+          <img loading="lazy" src="img/teleskop.jpg" alt="Mein Teleskopsetup">
+        </div>
+    </div>
+    <div class="maincontainer" style="background-color: #151515; color: white;">
+      <div class="subcontainer">
+        <div>
+          <h3>Kameras</h3>
+          <p>Für die meisten meiner Bilder nutze ich meine Nikon Z6II Vollformatkamera. Wenn es darum geht, kleinere
+            Objekte wie Galaxien zu fotografieren, greife ich auf meine alte Nikon D5200 APSC-Kamera zurück. Beide
+            Kameras
+            sind nicht für die Astrofotografie modifiziert, was bedeutet, dass ich nur im sichtbaren Licht arbeiten kann
+            und nicht im Infrarotbereich. Trotzdem gibt es viele faszinierende Objekte wie Galaxien, Sternhaufen und
+            Reflexionsnebel, die im sichtbaren Spektrum genügend Licht für spektakuläre Aufnahmen emittieren. Zum Guiden
+            und für Planetenaufnahmen verwende ich eine QHY 5L-II, eine Kamera, die speziell für diese Zwecke entwickelt
+            wurde. Zum Stacken benutze ich APP (Astro Pixel Processor) und Adobe Photoshop.</p>
+        </div>
       </div>
       <div class="subcontainer">
         <img loading="lazy" src="img/astrokamera.jpg" alt="Meine Astrokamera">
       </div>
     </div>
-    <div class="maincontainer">
+    <div class="maincontainer" style="background-color: #151515; color: white;">
       <h3>Planetenaufnahmen</h3>
-      <div class="galeriecontainer">
+      <div class="galeriecontainer" id="planetary">
         <a href="img/planetary\planetary_2.jpg" data-lightbox="mygallery"
           data-title="Sonne (fotografiert mit dem Sonnenteleskop der Sternwarte Ursensollen - Lunt LS80THA)"><img
             loading="lazy" src="img/planetary\planetary_small_2.jpg"></a>
@@ -170,36 +179,41 @@
             loading="lazy" src="img/planetary\planetary_small_3.jpg"></a>
         <a href="img/planetary\planetary_6.jpg" data-lightbox="mygallery" data-title="Abnehmender Mond"><img
             loading="lazy" src="img/planetary\planetary_small_6.jpg"></a>
-        <a href="img/planetary\planetary_1.jpg" data-lightbox="mygallery" data-title="Vollmond"><img
-            loading="lazy" src="img/planetary\planetary_small_1.jpg"></a>
+        <a href="img/planetary\planetary_1.jpg" data-lightbox="mygallery" data-title="Vollmond"><img loading="lazy"
+            src="img/planetary\planetary_small_1.jpg"></a>
         <a href="img/planetary\planetary_4.jpg" data-lightbox="mygallery" data-title="Zunehmender Mond (Mosaik)"><img
             loading="lazy" src="img/planetary\planetary_small_4.jpg"></a>
         <a href="img/planetary\planetary_7.jpg" data-lightbox="mygallery" data-title="Zunehmender Mond"><img
             loading="lazy" src="img/planetary\planetary_small_7.jpg"></a>
         <a href="img/planetary\planetary_8.jpg" data-lightbox="mygallery"
-          data-title="Jupiter (fotografiert mit dem Hauptteleskop der Sternwarte Ursensollen - ULT)"><img
-            loading="lazy" src="img/planetary\planetary_small_8.jpg"></a>
-        <a href="img/planetary\planetary_5.jpg" data-lightbox="mygallery" data-title="Saturn"><img
-            loading="lazy" src="img/planetary\planetary_small_5.jpg"></a>
+          data-title="Jupiter (fotografiert mit dem Hauptteleskop der Sternwarte Ursensollen - ULT)"><img loading="lazy"
+            src="img/planetary\planetary_small_8.jpg"></a>
+        <a href="img/planetary\planetary_5.jpg" data-lightbox="mygallery" data-title="Saturn"><img loading="lazy"
+            src="img/planetary\planetary_small_5.jpg"></a>
+      </div>
+      <div class="arrowcontainer" onclick="moveGalery('planetary')">
+        <i class="arrow" id="planetary_arrow" style="border: solid white; border-width: 0 3px 3px 0;"></i>
       </div>
     </div>
     </div>
-    <div class="maincontainer">
+    <div class="maincontainer" style="background-color: #151515; color: white;">
       <div class="subcontainer">
-        <h3>Planetary</h3>
-        <p>Da Planeten, der Mond und die Sonne sehr hell sind, braucht man spezielle Techniken, um sie richtig
-          einzufangen. Für Planeten verwende ich meistens meine Guiding-Kamera, die QHY 5L-II, zusammen mit einer
-          3x-Barlow-Linse. Damit mache ich kurze Videoaufnahmen, die ich anschließend mit AutoStakkert3 zu einem
-          Bild zusammenfüge. Für die Sonne und den Mond mache ich mehrere Videoaufnahmen und kombiniere diese zu einem
-          Mosaik. Das Sonnenbild habe ich mit einem speziellen Sonnenteleskop, dem Lunt LS80THA, der Sternwarte
-          Ursensollen aufgenommen.</p>
+        <div>
+          <h3>Planetary</h3>
+          <p>Da Planeten, der Mond und die Sonne sehr hell sind, braucht man spezielle Techniken, um sie richtig
+            einzufangen. Für Planeten verwende ich meistens meine Guiding-Kamera, die QHY 5L-II, zusammen mit einer
+            3x-Barlow-Linse. Damit mache ich kurze Videoaufnahmen, die ich anschließend mit AutoStakkert3 zu einem
+            Bild zusammenfüge. Für die Sonne und den Mond mache ich mehrere Videoaufnahmen und kombiniere diese zu einem
+            Mosaik. Das Sonnenbild habe ich mit einem speziellen Sonnenteleskop, dem Lunt LS80THA, der Sternwarte
+            Ursensollen aufgenommen.</p>
+        </div>
       </div>
       <div class="subcontainer">
         <img loading="lazy" src="img/planetary.jpg" alt="Planetenkamera">
       </div>
     </div>
   </main>
-  <footer>
+  <footer style="background-color: #151515; color: white;">
     <div class="footercontainer">
       <div class="footercolumn">
         <p>Julian Probst</p>
@@ -208,19 +222,19 @@
       </div>
       <div class="footercolumn">
         <p></p>
-        <div class="grafik">
+        <div class="grafik" style="filter: invert(100%);">
           <img src="img/instagram_grafik.png" alt="Grafik Instagram">
         </div>
-        <a target="_blank" href="https://www.instagram.com/julian.probst/">Instagram</a>
+        <a style="background-color: #151515; color: white;" target="_blank" href="https://www.instagram.com/julian.probst/">Instagram</a>
         <p></p>
-        <div class="grafik">
+        <div class="grafik" style="filter: invert(100%);">
           <img src="img/mail_grafik.png" alt="Grafik E-Mail">
         </div>
-        <a href="mailto:mail@julianprobst.de">E-Mail</a>
+        <a style="background-color: #151515; color: white;" href="mailto:mail@julianprobst.de">E-Mail</a>
       </div>
-      <div class="footercolumn">
-        <p><a href="impressum.html">Impressum</p></a>
-        <p><a href="datenschutz.html">Datenschutz</p></a>
+      <div class="footercolumn" >
+        <p><a style="background-color: #151515; color: white;" href="impressum.html">Impressum</p></a>
+        <p><a style="background-color: #151515; color: white;" href="datenschutz.html">Datenschutz</p></a>
       </div>
     </div>
   </footer>

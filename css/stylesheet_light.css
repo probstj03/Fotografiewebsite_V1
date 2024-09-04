@@ -34,6 +34,10 @@
     overflow-x: hidden;
   }
 
+  body p{
+    font-weight: 200;
+  }
+
   header li {
     display: inline-block;
   }
@@ -120,7 +124,7 @@
 
 
   .top_headline h1 {
-    
+    font-weight: 800;
     text-align: center;
     position: relative;
     top: 50%;
@@ -266,6 +270,14 @@
     font-size: 17px;
   }
 
+  .arrowcontainer {
+    display: none;
+  }
+
+  .arrow {
+    display: none;
+  }
+
   .subcontainer p {
     text-align: left;
     font-size: 18px;
@@ -365,6 +377,7 @@
     .maincontainer {
       background-color: #151515;
     }
+   
     footer {
       background-color: #151515;
     }
@@ -411,6 +424,10 @@
   body {
     font-family: 'aller', sans-serif;
     margin: 0;
+  }
+
+  main p {
+    font-weight: 200;
   }
 
   .navanchor {
@@ -606,19 +623,58 @@
   }
 
   .galeriecontainer {
-    margin: auto;
     text-align: middle;
     display: flex;
-    overflow: auto;
-    transition: 1;
+    flex-wrap: wrap;
+    width: 100vw;
+    height: 200px;
+    overflow: hidden;
   }
 
-  .galeriecontainer img {
-    height: 50vw;
-  }
-
-  .galeriecontainer img:hover {
+  .galeriecontainer a:hover {
     filter: brightness(60%);
+    cursor:pointer
+
+  }
+
+  .galeriecontainer a {
+    flex: 0 0 33%; /* Jeder Link (und damit das Bild) nimmt 50% der Containerbreite ein */
+    max-width: 33%;
+    width: 33vw;
+    height: 33vw;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+  }
+  
+  
+  .galeriecontainer img {
+    width: auto; /* Das Bild füllt den gesamten verfügbaren Platz des Links aus */
+    height: auto;
+    max-width: 30vw;
+    max-height: 30vw; /* Beibehaltung des Seitenverhältnisses */
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .arrow {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 10px;
+    rotate: 45deg;
+    margin: 10px;
+    cursor: pointer;
+  }
+
+  .arrow:hover {
+    opacity: 50%;
+  }
+
+  .arrowcontainer {
+    box-shadow: rgba(0, 0, 0, 0.2) 0px -20px 12px 0px;
+    z-index: 5;
+    width: 100%;
   }
 
   .maincontainer p {
@@ -722,6 +778,11 @@
     .maincontainer {
       background-color: #151515;
     }
+    .arrow {
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    }
+
 
     footer {
       background-color: #151515;

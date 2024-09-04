@@ -67,3 +67,17 @@ function mouseOutBurger() {
   burgerLines.forEach(burgerLines => { burgerLines.style.filter = "invert(0%)"; });
 }
 
+function moveGalery(name){
+  galery = document.getElementById(name);
+
+  if (galery.classList.contains("opened")) {
+    galery.style.height = "200px";
+    document.getElementById(name+"_arrow").style.rotate = "45deg";
+    galery.classList.toggle("opened")
+  } else {
+    galery.style.height = "100%";
+    document.getElementById(name+"_arrow").style.rotate = "225deg";
+    galery.classList.toggle("opened")
+  }
+}
+
