@@ -71,7 +71,7 @@ function moveGalery(name){
   galery = document.getElementById(name);
 
   if (galery.classList.contains("opened")) {
-    galery.style.height = "200px";
+    galery.style.height = "100px";
     document.getElementById(name+"_arrow").style.rotate = "45deg";
     galery.classList.toggle("opened")
   } else {
@@ -81,3 +81,22 @@ function moveGalery(name){
   }
 }
 
+function calculateAge(birthDate) {
+  const today = new Date();
+  const birth = new Date(birthDate);
+  
+  let age = today.getFullYear() - birth.getFullYear();
+  const monthDifference = today.getMonth() - birth.getMonth();
+  
+  if (monthDifference < 0 || (monthDifference === 0 && today.getDate() < birth.getDate())) {
+      age--;
+  }
+  
+  return age;
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  const birthDate = '2000-10-03';  
+  const age = calculateAge(birthDate);
+  document.getElementById('age').textContent = age;
+});
