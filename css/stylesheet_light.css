@@ -34,7 +34,7 @@
     overflow-x: hidden;
   }
 
-  body p{
+  body p {
     font-weight: 200;
   }
 
@@ -62,6 +62,7 @@
   #close {
     display: none;
   }
+
   #corner {
     display: none;
   }
@@ -120,7 +121,7 @@
     height: 100vh;
     width: 100%;
   }
-  
+
 
 
   .top_headline h1 {
@@ -151,7 +152,7 @@
 
   #links:hover img {
     filter: brightness(60%);
-    transform:scale(1.1)
+    transform: scale(1.1)
   }
 
 
@@ -211,7 +212,7 @@
 
   .maincontainer {
     margin: auto;
-    text-align: middle;
+    align-items: center;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -219,7 +220,7 @@
   }
 
   .subcontainer {
-    margin-top: 38px; 
+    margin-top: 38px;
     width: 500px;
     overflow: hidden;
     margin: 20px;
@@ -235,21 +236,19 @@
     object-fit: cover;
     width: 100%;
     height: auto;
-    transition: 0.2s ; 
+    transition: 0.2s;
   }
 
-
-
-
-
   .galeriecontainer {
-    padding: 22px;
-    margin: auto;
+    padding-top: 22px;
+    padding-bottom: 22px;
+    padding-left: 50px;
+    padding-right: 50px;
     text-align: middle;
     display: flex;
     overflow: auto;
-    padding-left: 0px;
-    padding-right: 0px;
+    margin-left: -50px;
+    margin-right: -50px;
   }
 
   .galeriecontainer img {
@@ -331,10 +330,10 @@
     text-align: left;
   }
 
-  #subpage{
-    padding-left: 20vw; 
+  #subpage {
+    padding-left: 20vw;
     padding-right: 20vw;
-    display: block; 
+    display: block;
     text-align: left;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -374,13 +373,15 @@
     .introcontainer {
       background-color: #151515;
     }
+
     .maincontainer {
       background-color: #151515;
     }
-   
+
     footer {
       background-color: #151515;
     }
+
     footer a {
       color: white;
     }
@@ -513,6 +514,7 @@
     width: 100%;
     object-fit: cover;
   }
+
   #corner {
     border-top-right-radius: 5px;
     border-top-left-radius: 5px;
@@ -556,9 +558,11 @@
     transform: translate(-50%, -50%);
     transition: 0.2s
   }
+
   #links:hover img {
     filter: brightness(60%);
   }
+
   #links:hover h2 {
     letter-spacing: 12px;
   }
@@ -611,7 +615,7 @@
     margin-bottom: 5px;
     position: relative;
     border-radius: 5px;
-  
+
   }
 
   .subcontainer img {
@@ -619,7 +623,7 @@
     border-radius: 5px;
     object-fit: cover;
     height: auto;
-    transition: 0.2s ; 
+    transition: 0.2s;
   }
 
   .galeriecontainer {
@@ -633,12 +637,12 @@
 
   .galeriecontainer a:hover {
     filter: brightness(60%);
-    cursor:pointer
-
+    cursor: pointer
   }
 
   .galeriecontainer a {
-    flex: 0 0 33%; /* Jeder Link (und damit das Bild) nimmt 50% der Containerbreite ein */
+    flex: 0 0 33%;
+    /* Jeder Link (und damit das Bild) nimmt 50% der Containerbreite ein */
     max-width: 33%;
     width: 33vw;
     height: 33vw;
@@ -646,13 +650,15 @@
     place-items: center;
     overflow: hidden;
   }
-  
-  
+
+
   .galeriecontainer img {
-    width: auto; /* Das Bild füllt den gesamten verfügbaren Platz des Links aus */
+    width: auto;
+    /* Das Bild füllt den gesamten verfügbaren Platz des Links aus */
     height: auto;
     max-width: 30vw;
-    max-height: 30vw; /* Beibehaltung des Seitenverhältnisses */
+    max-height: 30vw;
+    /* Beibehaltung des Seitenverhältnisses */
     display: inline-block;
     vertical-align: middle;
   }
@@ -763,10 +769,11 @@
     .navlinks {
       background-color: #151515;
     }
+
     #corner {
       background-color: #151515;
     }
-  
+
 
     .introcontainer {
       background-color: #151515;
@@ -775,12 +782,14 @@
     main a {
       color: grey;
     }
+
     .maincontainer {
       background-color: #151515;
     }
+
     .arrow {
-    border: solid white;
-    border-width: 0 3px 3px 0;
+      border: solid white;
+      border-width: 0 3px 3px 0;
     }
 
 
