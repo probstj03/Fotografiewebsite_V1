@@ -3,10 +3,10 @@ from PIL import Image
 import numpy as np
 import csv
 
-#input_dir = "E:/Bilder/Website/"
-input_dir = "/Volumes/JULIAN_M1/Bilder/Website/"
-#output_dir = "C:/Users/probs/OneDrive/Dokumente/Programmieren/Websites/Fotografiewebsite_V1/"
-output_dir = "/Users/julian/Library/CloudStorage/GoogleDrive-probstj03@gmail.com/Meine Ablage/Dokumente/Programmieren/Websites/Fotografiewebsite_V1/"
+input_dir = "E:/Bilder/Website/"
+#input_dir = "/Volumes/JULIAN_M1/Bilder/Website/"
+output_dir = "C:/Users/probs/Meine Ablage/Dokumente/Programmieren/Websites/Fotografiewebsite_V1/"
+#output_dir = "/Users/julian/Library/CloudStorage/GoogleDrive-probstj03@gmail.com/Meine Ablage/Dokumente/Programmieren/Websites/Fotografiewebsite_V1/"
 
 def compress_images(folder_name, data=True):
 
@@ -61,4 +61,4 @@ def compress_images(folder_name, data=True):
                 
 
 # Beispielaufruf
-compress_images("shooting", False)
+compress_images("analog")
