@@ -3,10 +3,12 @@ from PIL import Image
 import numpy as np
 import csv
 
-input_dir = "E:/Bilder/Website/"
-#input_dir = "/Volumes/JULIAN_M1/Bilder/Website/"
-output_dir = "C:/Users/probs/Meine Ablage/Dokumente/Programmieren/Websites/Fotografiewebsite_V1/"
-#output_dir = "/Users/julian/Library/CloudStorage/GoogleDrive-probstj03@gmail.com/Meine Ablage/Dokumente/Programmieren/Websites/Fotografiewebsite_V1/"
+#input_dir = "E:/Bilder/Website/"
+input_dir =  "/Users/julian/Pictures/Website/" #"/Volumes/JULIAN_M1/Bilder/Website/"
+#output_dir = "C:/Users/probs/Meine Ablage/Dokumente/Programmieren/Websites/Fotografiewebsite_V1/"
+output_dir = "/Users/julian/Library/CloudStorage/GoogleDrive-probstj03@gmail.com/Meine Ablage/Dokumente/Programmieren/Websites/Fotografiewebsite_V1/"
+
+number_offset = 7
 
 def compress_images(folder_name, data=True):
 
@@ -29,8 +31,8 @@ def compress_images(folder_name, data=True):
     for file in files:  # Durchlaufe die Dateien in aufsteigender Reihenfolge
 
                     input_path = file.path
-                    output_large = os.path.join("img/",folder_name,  f"{folder_name.split('.')[0]}_{index}.jpg")
-                    output_small = os.path.join("img/",folder_name, f"{folder_name.split('.')[0]}_small_{index}.jpg")
+                    output_large = os.path.join("img/",folder_name,  f"{folder_name.split('.')[0]}_{index+number_offset}.jpg")
+                    output_small = os.path.join("img/",folder_name, f"{folder_name.split('.')[0]}_small_{index+number_offset}.jpg")
                     
                     with Image.open(input_path) as img:
                         # Komprimierung für große Bilder
@@ -46,7 +48,7 @@ def compress_images(folder_name, data=True):
                     # HTML Code printen
                     if data:
                         print(f'<a href="{output_large}" data-lightbox="mygallery" '
-                            f'data-title="{data[index-1]}"'
+                            f'data-title="{data[index-1 + number_offset]}"'
                             f'><img src="{output_small}">'
                             f'</a>')
                     else:
@@ -61,4 +63,4 @@ def compress_images(folder_name, data=True):
                 
 
 # Beispielaufruf
-compress_images("widescape")
+compress_images("planetary")
