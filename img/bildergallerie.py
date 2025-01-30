@@ -50,11 +50,11 @@ def compress_images(folder_name):
             img_small.thumbnail((1000, 1000))
             img_small.save(output_dir + output_small, quality=40)
         
-        # HTML-Code mit Metadaten erstellen
-        metadata_str = "  |  ".join([f"{key}: {value}" for key, value in metadata.items()])
+        # HTML-Code mit formatierten Metadaten erstellen
+        metadata_str = format_metadata(metadata)
         print(f'<a href="{output_large}" data-lightbox="mygallery" '
-              f'data-title="{metadata_str}">'
-              f'<img loading="lazy" src="{output_small}">'
+              f'data-title="{metadata_str}">' 
+              f'<img loading="lazy" src="{output_small}">' 
               f'</a>')
 
         index -= 1
@@ -65,18 +65,15 @@ def extract_metadata(exif_data):
         # Schlüssel und Namen zuordnen
         exif_keys = {ExifTags.TAGS[key]: key for key in ExifTags.TAGS if key in exif_data}
         # Nützliche Daten extrahieren
-        if "Model" in exif_keys:
-            camera_model = exif_data[exif_keys["Model"]]
-            # Anpassung für Nikon Z 6_2
-            if camera_model == "NIKON Z 6_2":
-                metadata["Kamera"] = "NIKON Z6II"
-            else:
-                metadata["Kamera"] = camera_model
-        if "LensModel" in exif_keys:
-            metadata["Objektiv"] = exif_data[exif_keys["LensModel"]]
+        if "ISOSpeedRatings" in exif_keys:
+            metadata["ISO"] = f"ISO{exif_data[exif_keys["ISOSpeedRatings"]]}"
         if "FocalLength" in exif_keys:
             focal_length = exif_data[exif_keys["FocalLength"]]
             metadata["Brennweite"] = f"{float(focal_length):.1f}mm"
+    
+        if "FNumber" in exif_keys:
+            f_number = exif_data[exif_keys["FNumber"]]
+            metadata["Blende"] = f"f/{float(f_number):.1f}"
         if "ExposureTime" in exif_keys:
             exposure_time = exif_data[exif_keys["ExposureTime"]]
             exposure_value = float(exposure_time)
@@ -88,13 +85,30 @@ def extract_metadata(exif_data):
             else:
                 # Belichtungszeit als Dezimalzahl darstellen
                 metadata["Belichtung"] = f"{exposure_value:.1f}s"
-        if "ISOSpeedRatings" in exif_keys:
-            metadata["ISO"] = exif_data[exif_keys["ISOSpeedRatings"]]
-        if "FNumber" in exif_keys:
-            f_number = exif_data[exif_keys["FNumber"]]
-            metadata["Blende"] = f"f/{float(f_number):.1f}"
+        if "Model" in exif_keys:
+            camera_model = exif_data[exif_keys["Model"]]
+            # Anpassung für Nikon Z 6_2
+            if camera_model == "NIKON Z 6_2":
+                metadata["Kamera"] = "NIKON Z6II"
+            else:
+                metadata["Kamera"] = camera_model
+        if "LensModel" in exif_keys:
+            metadata["Objektiv"] = exif_data[exif_keys["LensModel"]]
+        if "ImageDescription" in exif_keys:
+            metadata["Titel"] = exif_data[exif_keys["ImageDescription"]]
         
     return metadata
 
+def format_metadata(metadata):
+    # Erstellen der formatierten Metadaten
+    core_data = " | ".join(
+        f"{metadata[key]}" for key in ["Brennweite", "Belichtung", "ISO", "Blende"] if key in metadata
+    )
+    camera_data = " | ".join(
+        f"{key}: {metadata[key]}" for key in ["Kamera", "Objektiv"] if key in metadata
+    )
+    title = f"<b>{metadata['Titel']}</b> - " if "Titel" in metadata else ""
+    return f"{title} [ {core_data} ] -  {camera_data}" if camera_data else f"{title}[ {core_data} ]"
+
 # Beispielaufruf
-compress_images("kindergarten")
+compress_images("widescape")
